@@ -1,3 +1,5 @@
+import random
+
 import colorgram
 import turtle
 from turtle import Turtle, Screen
@@ -34,35 +36,43 @@ from turtle import Turtle, Screen
 color_list = [(47, 17, 4), (177, 15, 1), (210, 70, 14), (7, 25, 69), (241, 221, 0), (227, 145, 94), (116, 177, 203), (28, 105, 172), (236, 229, 100),
               (4, 55, 12), (207, 135, 12), (223, 77, 47), (32, 126, 62), (127, 31, 49), (160, 177, 165), (221, 112, 157), (16, 46, 135), (25, 188, 94),
               (233, 87, 92), (151, 214, 199), (243, 223, 234), (60, 79, 0), (64, 39, 68), (71, 131, 212), (203, 40, 46), (0, 159, 208), (0, 82, 106)]
-
-kotha = Turtle()
-kotha.pencolor("white")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 screen = Screen()
 screen.setworldcoordinates(-1, -1, screen.window_width() - 1, screen.window_height() - 1) #takes turle to lower left corner of window
 
-
 print(screen.window_width())
 print(screen.window_height())
+
+kotha = Turtle()
+turtle.colormode(255)
+random_color = random.choice(color_list)
+kotha.color(random_color)
+
+
+kotha.penup()
+kotha.forward(20)
+kotha.pendown()
+kotha.circle(20)
+# kotha.end_fill("blue")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 screen.exitonclick()
