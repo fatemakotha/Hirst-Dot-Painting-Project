@@ -46,7 +46,13 @@ cutu = turtle_module.Turtle()
 turtle_module.colormode(255)
 cutu.speed("fastest")
 
-cutu.dot(20, random.choice(color_list)) #draws a filled dot of size 20 and a random color from the color list
+cutu.setheading(220) #sets direction downwards and left wards
+cutu.forward(300) #moves in that direction
+cutu.setheading(0) #goes back to original postition that is had at the beginning
+
+for _ in range(10):
+    cutu.dot(20, random.choice(color_list)) #draws a filled dot of size 20 and a random color from the color list
+    cutu.forward(50)
 
 
 
