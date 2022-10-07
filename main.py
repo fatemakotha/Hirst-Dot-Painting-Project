@@ -28,3 +28,6 @@ for each_color in colors: #for EXAMPLE: Color: Rgb(r=245, g=247, b=251)
     g = each_color.rgb.g #so g = 247
     b = each_color.rgb.b #so b = 251
     my_color_tuple = (r, g, b) #reated a Tuple
+    rgb_colors.append(my_color_tuple)
+
+print(rgb_colors)
