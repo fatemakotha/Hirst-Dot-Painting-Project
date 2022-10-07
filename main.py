@@ -50,9 +50,18 @@ cutu.setheading(220) #sets direction downwards and left wards
 cutu.forward(300) #moves in that direction
 cutu.setheading(0) #goes back to original postition that is had at the beginning
 
-for _ in range(10):
+number_of_dots = 100
+
+for dot_count in range(1, number_of_dots + 1): #range is 1 to 100
     cutu.dot(20, random.choice(color_list)) #draws a filled dot of size 20 and a random color from the color list
     cutu.forward(50)
+    if dot_count % 10 == 0:
+        cutu.setheading(90) #faces up
+        cutu.forward(50)
+        cutu.setheading(180) #face left
+        cutu.forward(500) #moves to left corner of second row from bottom
+        cutu.setheading(0) #faces right
+
 
 
 
