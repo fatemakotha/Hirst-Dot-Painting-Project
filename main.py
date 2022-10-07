@@ -45,6 +45,7 @@ color_list = [(47, 17, 4), (177, 15, 1), (210, 70, 14), (7, 25, 69), (241, 221, 
 cutu = turtle_module.Turtle()
 turtle_module.colormode(255)
 cutu.speed("fastest")
+cutu.penup() #pen stays up because we do not need pen down for dots ***
 
 cutu.setheading(220) #sets direction downwards and left wards
 cutu.forward(300) #moves in that direction
