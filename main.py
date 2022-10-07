@@ -36,6 +36,10 @@ color_list = [(47, 17, 4), (177, 15, 1), (210, 70, 14), (7, 25, 69), (241, 221, 
               (233, 87, 92), (151, 214, 199), (243, 223, 234), (60, 79, 0), (64, 39, 68), (71, 131, 212), (203, 40, 46), (0, 159, 208), (0, 82, 106)]
 
 kotha = Turtle()
+kotha.pencolor("white")
+
+
+
 
 
 
@@ -56,4 +60,9 @@ kotha = Turtle()
 
 
 screen = Screen()
+screen.setworldcoordinates(-1, -1, screen.window_width() - 1, screen.window_height() - 1) #takes turle to lower left corner of window
+
+
+print(screen.window_width())
+print(screen.window_height())
 screen.exitonclick()
